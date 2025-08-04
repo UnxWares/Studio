@@ -1,6 +1,5 @@
 import { defineConfig } from 'vite';
 import laravel from 'laravel-vite-plugin';
-import tailwindcss from '@tailwindcss/vite';
 import { svelte } from "@sveltejs/vite-plugin-svelte";
 import autoprefixer from 'autoprefixer';
 
@@ -13,7 +12,6 @@ export default defineConfig({
             	autoprefixer()
             ],
         }),
-        tailwindcss(),
 	svelte({
 		prebundleSvelteLibraries: true,
 	}),
